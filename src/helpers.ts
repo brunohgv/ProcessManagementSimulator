@@ -8,3 +8,8 @@ export const logProcessList = (list: Process[]): void => {
   text += ']'
   console.log(text)
 }
+
+export const logProcess = (p: Process): void => {
+  console.log(`{ pid: ${p.pid}, name: ${p.name}, priority: ${p.priority}, boundType: ${p.boundType}, cpuTime: ${p.cpuTime}, status: ${p.status} }`)
+
+}
